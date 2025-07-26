@@ -1,195 +1,27 @@
-# ShopHub - E-commerce Product Dashboard
+Description of E-commerce Dashboard
 
-A modern, responsive e-commerce product dashboard built with React, TypeScript, and Tailwind CSS. Features product browsing, detailed views, shopping cart functionality, and simulated checkout process.
+![WhatsApp Image 2025-07-26 at 14 18 28_24d78f1f](https://github.com/user-attachments/assets/c48d5607-a083-4fd2-b97a-9ecc89fce15d)
+![WhatsApp Image 2025-07-26 at 14 18 28_ebab126d](https://github.com/user-attachments/assets/55db37e8-f29a-46ea-ae1a-3ebdcf1fb0c8)
+![WhatsApp Image 2025-07-26 at 14 18 28_574e334b](https://github.com/user-attachments/assets/04191b79-763e-482c-8c1b-a4cd6f73cbcc)
+![WhatsApp Image 2025-07-26 at 14 18 29_93754db9](https://github.com/user-attachments/assets/9af01984-9afa-4176-b772-0de338d2e1d0)
+![WhatsApp Image 2025-07-26 at 14 18 29_a3620edf](https://github.com/user-attachments/assets/c303719d-5ab1-4018-9df3-76c7cd5ea649)
+![WhatsApp Image 2025-07-26 at 14 18 29_c8b4fb2b](https://github.com/user-attachments/assets/7bdd25c3-8cc9-42ab-8c75-863d8a8a3818)
 
-## 🚀 Features
-
-### Core Functionality
-- **Product Browsing**: Grid view of products with search and filtering capabilities
-- **Product Details**: Comprehensive product information with high-quality presentation
-- **Shopping Cart**: Full CRUD operations (add, update quantity, remove items)
-- **Simulated Checkout**: Mock checkout process with order confirmation
-- **Responsive Design**: Optimized for mobile, tablet, and desktop devices
-
-### Advanced Features
-- **Real-time Search**: Filter products by name or category
-- **Smart Filtering**: Sort by price, rating, and name
-- **State Management**: React Context API for cart state
-- **Loading States**: Skeleton screens and loading indicators
-- **Error Handling**: Graceful error states with retry functionality
-- **Animations**: Smooth transitions and micro-interactions
-
-## 🛠️ Technology Stack
-
-- **Frontend**: React 18, TypeScript
-- **Routing**: React Router DOM
-- **Styling**: Tailwind CSS
-- **Icons**: Lucide React
-- **API**: Fake Store API for product data
-- **State Management**: React Context API + useReducer
-- **Build Tool**: Vite
-
-## 📁 Project Structure
-
-```
-src/
-├── components/
-│   ├── common/
-│   │   ├── Header.tsx          # Navigation header with cart indicator
-│   │   ├── Loading.tsx         # Loading components and skeletons
-│   │   └── SearchBar.tsx       # Reusable search input
-│   ├── product/
-│   │   ├── ProductCard.tsx     # Individual product card
-│   │   ├── ProductGrid.tsx     # Product grid layout
-│   │   └── ProductFilters.tsx  # Category and sort filters
-│   └── cart/
-│       ├── CartItem.tsx        # Individual cart item
-│       └── CartSummary.tsx     # Order summary and checkout
-├── pages/
-│   ├── HomePage.tsx            # Main product listing page
-│   ├── ProductDetailPage.tsx   # Detailed product view
-│   └── CartPage.tsx            # Shopping cart page
-├── contexts/
-│   └── CartContext.tsx         # Cart state management
-├── hooks/
-│   └── useProducts.ts          # Product data fetching hooks
-├── types/
-│   └── product.ts              # TypeScript type definitions
-├── utils/
-│   └── api.ts                  # API utility functions
-└── App.tsx                     # Main application component
-```
-
-## 🎨 Design System
-
-### Color Palette
-- **Primary**: Blue (#3B82F6) - Main brand color
-- **Secondary**: Emerald (#10B981) - Success states
-- **Accent**: Amber (#F59E0B) - Highlights and warnings
-- **Neutrals**: Gray scale for text and backgrounds
-
-### Typography
-- **Headings**: Bold, clear hierarchy
-- **Body**: Readable, accessible contrast ratios
-- **Interactive**: Hover states and feedback
-
-### Layout
-- **Mobile-first**: Responsive breakpoints
-- **Grid System**: CSS Grid and Flexbox
-- **Spacing**: Consistent 8px spacing system
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js (version 16 or higher)
-- npm or yarn package manager
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd shophub
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Open your browser**
-   Navigate to `http://localhost:5173`
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-The build artifacts will be stored in the `dist/` directory.
-
-## 📱 Usage
-
-### Browsing Products
-1. View products on the home page in a responsive grid layout
-2. Use the search bar to find specific products
-3. Filter by category or sort by price/rating
-4. Click on any product card to view details
-
-### Product Details
-1. View comprehensive product information
-2. See high-quality product images
-3. Read detailed descriptions and ratings
-4. Add items to your cart with one click
-
-### Shopping Cart
-1. View all items in your cart
-2. Update quantities with +/- buttons
-3. Remove items with the trash icon
-4. See real-time price calculations
-5. Proceed to simulated checkout
-
-### Checkout Process
-1. Review order summary with totals
-2. See shipping and tax calculations
-3. Click "Proceed to Checkout" for simulation
-4. Receive order confirmation
-
-## 🔧 API Integration
-
-The application uses the [Fake Store API](https://fakestoreapi.com/) for product data:
-
-- **GET /products** - Fetch all products
-- **GET /products/:id** - Fetch single product
-- **GET /products/categories** - Fetch product categories
-
-## 🧪 Testing
-
-Run the test suite:
-```bash
-npm run test
-```
-
-## 🚀 Deployment
-
-The application can be deployed to various platforms:
-
-### Vercel
-```bash
-npm run build
-# Deploy to Vercel
-```
-
-### Netlify
-```bash
-npm run build
-# Upload dist/ folder to Netlify
-```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- [Fake Store API](https://fakestoreapi.com/) for providing product data
-- [Lucide React](https://lucide.dev/) for beautiful icons
-- [Tailwind CSS](https://tailwindcss.com/) for utility-first styling
-- [React](https://reactjs.org/) for the amazing framework
-
----
-
-Built with ❤️ by [Your Name]# Front-end
+This file defines the main structure of your React application. Here’s what it does:
+Imports:
+React and routing components from react-router-dom.
+Context provider for the shopping cart (CartProvider).
+Common UI components like Header.
+Page components: HomePage, ProductDetailPage, and CartPage.
+App Component:
+Wraps the entire app in a CartProvider so that cart state is available throughout the app.
+Uses BrowserRouter (Router) to enable client-side routing.
+Renders a Header at the top of every page.
+Defines three main routes:
+/ → Home page (product listing or landing page)
+/product/:id → Product detail page (shows details for a specific product)
+/cart → Shopping cart page
+Styling:
+The main container uses Tailwind CSS classes for a minimum screen height and background color.
+Export:
+Exports the App component as the default export.
